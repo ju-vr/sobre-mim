@@ -1,14 +1,37 @@
 /* CSS externo */
 
-body {  /*Estilo global da página */
-    background-color: #ffffff;
-    line-height: 1.6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+:root{
+    --cor-primaria:#5744c5;
+    --cor-segundaria: #5161c7;
+    --cor-botao:#5d15bb;
+    --cor-fundo-pagina:#ffffff;
+    --cor-fundo-cartao:#ffffff;
+    --cor-primaria-texto:#000000;
+    --cor-bordaas:#1c0f28;
+    --cor-houver-menu:#434bde;
+    --cor-hover-card:#ffffff;
 }
+[data-theme="dark"] {
+    --cor-primaria:#caa2ed;
+    --cor-segundaria: #a14eea;
+    --cor-botao:#6f94f0;
+    --cor-fundo-pagina:#472794;
+    --cor-fundo-cartao:#8667f6;
+    --cor-primaria-texto:#0a0017;
+    --cor-bordaas:#ede1f7;
+    --cor-houver-menu:#d6cddd;
+    --cor-hover-card:#eee9f3;
+
+}
+body {
+    font-family:'Ubuntu', sans-serif;
+    background-color:var(--cor-fundo-pagina);
+    color:var(--cor-primaria-texto)
+ }
 
 h1, h2 { /*titulos*/
     text-align: center;
-    color: #005f99;
+    color: #232ebc;
     margin-bottom: 1rem;
 }
 
@@ -19,7 +42,7 @@ h1, h2 {
 
 
 header { /*cabeçalho, pagina de navegação*/
-    background-color: #0077b6;
+    background-color: #260c74;
     padding: 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -50,7 +73,9 @@ header a {
 header a:hover {
     background-color: #003d66;
 }
-
+#botao-tema{
+    font-size: 1.5rem;
+}
 section {
     max-width: 900px;
     margin: 2rem auto;
@@ -118,7 +143,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #0077b6;
+    background-color: #191453;
     color: #ffffff;
     padding: .25rem .75rem;
 }
@@ -132,7 +157,7 @@ input[type="submit"] {
 
 .titulo-card{
     font-weight: bold;
-    color: #0077b6;
+    color: #524fb7;
     font-size: 1.3rem;
 }
 .instituicao-card {
@@ -144,7 +169,7 @@ input[type="submit"] {
 .nome-hskill {
     text-align: center;
     font-size: 1.1rem;
-    color: #0077b6
+    color: #667ece
 }
 
 .cards-em-coluna {

@@ -1,102 +1,219 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
+    <!-- Meta informações sobre a página -->
     <meta charset="utf-8">
-    <meta name="viewport" content=" "width=device-width, initial-scale="1.0">
-    <title hidden>Sobre mim</title>
-    <!--CSS Reset-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim ♡</title>
+
+    <!-- CSS Reset -->
     <link rel="stylesheet" href="reset.css">
-<!--CSS externo(arquivo style)-->
+
+    <!-- CSS externo (arquivo style) -->
     <link rel="stylesheet" href="style.css">
-    
+
+    <!-- CSS interno (tag style) -->
     <style>
+        /* body {
+                background-color: #00ff00;
+            } */
     </style>
-    <!-- META INFORMAÇÕES SOBRE A PAGINA -->
 </head>
-<!-- HTML NÃO TEM PESCOÇO --> 
+
 <body>
-    <h1>Sobre mim!</h1>
-    <!--code injected by live server-->
-
-
-    <p></p>
-
-    <img src="https://avatars.githubusercontent.com/u/200938136?s=400&u=b7b42663d387a885969fd2957e616df66b836dff&v=4" 
-         alt="Foto de perfil do github" 
-         width="200" height="200" 
-         title="foto de perfil do github">
-
-    <p>
-        <a href="https://github.com/ju-vr"></a>
-    </p>
-
-    <ol>
-    </ol>
-
-    <ul>
-     
-    </ul>
 
     <header>
-        <ul>
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Formação academica</a></li>
-            <li><a href="#">hard skills</a></li>
-            <li><a href="#">soft skills</a></li>
-            <li><a href="#">meus projetos</a></li>
-            <li><a href="#">meus artigos</a></li>
-            <li><a href="#">ultima seção</a></li>
-        </ul>
-
+        <nav>
+            <ul>
+                <li><a href="#sobreMim">Sobre mim </a></li>
+                <li><a href="#formacaoAcademica">Formação</a></li>
+                <li><a href="#hardSkills">Hard skills</a></li>
+                <li><a href="#softSkills">Soft skills</a></li>
+                <li><a href="#meusProjetos">Projetos</a></li>
+                <li><a href="#meusArtigos">Artigos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li> <span id="botao-tema">🌗</span> </li>
+            </ul>
+        </nav>
     </header>
 
-<section>
-    <h2>formação academica</h2>
-    <li>ensino fundamental completo pelo SESI</li>
-    <li>se formando no ensino medio do SESI</li>
-    <li>se formando em inglês</li>
-    <li>cursnado desenvolvimento de sistemas no senai</li>
-</section>
+    <section id="SobreMim">
+        <h1>Sobre mim</h1>
+        <p>Oi! Meu nome é Juliana Vaini, sou estudante do ensino médio e nasci no dia
+             28 de outubro de 2008 — ou seja, sou escorpiana♏! 
+            Amo aproveitar meu tempo livre saindo com amigos, indo a shows e, claro, 
+            maratonando minha série favorita: The Vampire Diaries.
+             Sou uma pessoa animada, curiosa e sempre aberta a novas experiências.</p>
 
-<section>
-    <h2>hard skills</h2>
-    <li>inglês nivel medio</li>
-    <li>design nivel básico</li>
-    <li>programação em JS nivel basico</li>
-    <li><a href="https://github.com/ju-vr">GitHub nivel basico</li></a>
-    <li>digitação mediana</li>
-    <li>edição de videos nivel simples</li>
-    <li>conhecimento nivel basico em lógica de programação</li>
-</section>
+        <img src="https://media-gru1-2.cdn.whatsapp.net/v/t61.24694-24/491874053_702218595571684_3081182607604539083_n.jpg?ccb=11-4&oh=01_Q5Aa1QEKBZb8zP-rDSU4e4ZKC0T_ZNVDaVcpuTkE6OGS0bijgA&oe=68163F5C&_nc_sid=5e03e0&_nc_cat=102" alt="Foto de uma mulher branca e vestido azul. " width="200"
+        alt="Foto de perfil do github" 
+        width="200" height="200" 
+        title="foto de perfil do github" class="foto-perfil">
 
-<section>
-    <h2>soft skills</h2>
-    <li>boa autoconfiança</li>
-    <li>tabalho em grupo</li>
-    <li>gosto de motivar as pessoas ao meu redor</li>
-    <li>responsabilidade com trabalho</li>
-    <li>empatia</li>
-    <li>resolução de poblemas</li>
-    <li>proatividade</li>
-    <li>comunicativa </li>
-    <li>tomada de decisão</li>
-</section>
+        <!-- section>(h2>{Nova seção})+p*2>lorem20 -->
 
-<section>
-    <h2>Meu projeto</h2>
+        <!-- header>nav.navbar>ul.lista>li*10>a>{link$} -->
+
+        <ul>
+            <li>
+                <a href="https://github.com/ju-vr" title="Clique para acessar meu portfólio no GitHub"
+                    target="_blank">Acesse o meu GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/jvaini_/?next=%2F" target="_blank">Acesse o meu Instagram</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="formacaoAcademica">
+
+        <h2 class="titulo-secao">Formação acadêmica</h2>
+
+        <div class="cards-em-coluna"> <!-- Contêiner dos cards -->
+
+            <ul class="card">
+                <li class="titulo-card">Escola</li>
+                <li class="instituicao-card"> Ensino quase completo pela instituição SESI</li>
+            </ul>
+
+            <ul class="card">
+                <li class="titulo-card">Técnico em Desenvolvimento de Sistemas</li>
+                <li class="instituicao-card">SENAI "Conde José Vicente de Azevedo"</li>
+                <li class="ano-card">2026 (previsto)</li>
+            </ul>
+
+        </div>
+
+        <!-- ul.card>li.titulo-card+li.instituicao-card+li.ano-card -->
+
+    </section>
+
+    <section id="hardSkills">
+        <h2 class="titulo-secao">Hard skills</h2>
+
+        <div class="cards-em-linha"> <!-- Contêiner dos cards (em linha) -->
+
+            <ul class="card">
+                <li class="icone-card">📚</li>
+                <li class="titulo-card">Inglês</li>
+                <li class="descricao-card">Nivel medio</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🪄</li>
+                <li class="titulo-card">Desing</li>
+                <li class="descricao-card">Nivel medio</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">📱</li>
+                <li class="titulo-card">Programação JS</li>
+                <li class="descricao-card">Nivel basico</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🐈‍⬛</li>
+                <li class="titulo-card">Git Hub </li>
+                <li class="descricao-card">Nivel medio </li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🎢</li>
+                <li class="titulo-card">Edição de video</li>
+                <li class="descricao-card">nivel medio/experiente</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🧾</li>
+                <li class="titulo-card">lógica de programação</li>
+                <li class="descricao-card">nivel basico</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section id="softSkills">
+
+        <h2 class="titulo-secao">Soft skills</h2>
+
+        <div class="cards-em-linha">
+
+            <ul class="card">
+                <li class="icone-card">🤝</li>
+                <li class="titulo-card">Trabalho em equipe</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🫡</li>
+                <li class="titulo-card">Autoconfiança</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🧩</li>
+                <li class="titulo-card">Responsabilidade com trabalho</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🦾</li>
+                <li class="titulo-card">Proatividade</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🗣️</li>
+                <li class="titulo-card">Comunicativa</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">⏱️</li>
+                <li class="titulo-card">Autogestão</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section id="MeuProjetos">
+
+        <h2>Meus projetos</h2>
+
     <li><a href="https://github.com/ju-vr">jogo de alunissagem</a> </li>
-</section>
 
-<section>
-    <address>Informações pessoais </p>
-    <address>telefone: 11959090304</li>
-    <address>Email- julianavainiruzisca@gmail.com</address>
-    <li><a href="https://github.com/ju-vr">Acesse o meu GitHub</a>
-        <li><a href="https://www.instagram.com/jvaini_/?next=%2F">Acesse o meu Instagram </a>
-    
-</section>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em contato comigo</h2>
+        <form>
+            <input type="text" name="nome">
+            <input type="email" name="email">
+            <textarea name="mensagem" rows="5" cols="50"></textarea>
+            <input type="submit" name="botaoEnviar" value="Solicitar contato">
+            <!-- <button type="button" name="botaoEnviar">Solicitar contato</button> -->
+        </form>
+    </section>
+
+    <footer id="rodape">
+        <ul>
+            <li>Instagram</li>
+            <li>GitHub</li>
+            <address>Email💌- julianavainiruzisca@gmail.com</address>
+            <address>telefone📞: 11959090304</li>
+            <address>📍São Paulo, SP - Brasil</address>
+        </ul>
+    </footer>
+    <script>
+        document.querySelector('#botao-tema').addEventListener('click', trocaTema);
+        function trocaTema() {
+            const root = document.documentElement;
+            if (root.getAttribute('data-theme') === 'dark') {
+                root.removeAttribute('data-theme');
+
+            } else {
+                root.setAttribute('data-theme', 'dark');
+            }
+        }
+    </script>
+
 </body>
+
 </html>
-
-
-
